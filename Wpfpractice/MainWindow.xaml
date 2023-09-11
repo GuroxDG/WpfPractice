@@ -8,7 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button
-            Name="btnPlay"
+            x:Name="btnPlay"
+            HorizontalAlignment="Left"
+            Content="First Option"
             Width="100"
             Height="25"
             ></Button>
