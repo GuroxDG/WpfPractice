@@ -3,18 +3,28 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"  
         xmlns:local="clr-namespace:Wpfpractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" Activated="MainWindow_OnActivated">
     <Window.Resources>
         <SolidColorBrush x:Key="brush" Color="Red" />
+        <sys:String x:Key="strTitle" >Pi-Techniques</sys:String> 
+        <Style  TargetType="TextBlock">  
+            <Setter Property="Foreground" Value="DarkRed"/>  
+            <Setter Property="HorizontalAlignment" Value="Center"/>  
+        </Style>  
     </Window.Resources>
     <Grid Name="pnlMainGrid" MouseUp="PnlMainGrid_OnMouseUp" Background="LightBlue" Opacity="1">
         <WrapPanel>
             <TextBlock Foreground="Blue">Multi</TextBlock>
             <TextBlock Foreground="{DynamicResource brush}">Hola Multi</TextBlock>
+            <TextBlock Text="{StaticResource strTitle}" Style="{StaticResource {x:Type TextBlock}}"></TextBlock>
         </WrapPanel>
-        <Button Name="btnPlay" HorizontalAlignment="Left" Content="First Option" Height="25" FontWeight="Bold" Click="BtnPlay_OnClick"></Button>
+        <Button Name="BtnPlay" HorizontalAlignment="Left" Content="First Option" Height="25" FontWeight="Bold" Click="BtnPlay_OnClick"></Button>
         <TextBox Text="hola" Width="30" Height="50"></TextBox>
+        <Label Content="{StaticResource strTitle}" Margin="50" Width="200"></Label>
+        <ComboBox Name="Box" Width="50" Height="60"></ComboBox>
+        
     </Grid>
 </Window>
