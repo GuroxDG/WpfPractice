@@ -5,19 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpfpractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button
-            x:Name="btnPlay"
-            HorizontalAlignment="Left"
-            Content="First Option"
-            Width="100"
-            Height="25"
-            ></Button>
-        <TextBox
-            Text="hola"
-            Width="30"
-            Height="50"></TextBox>
-
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid Name="pnlMainGrid" MouseUp="PnlMainGrid_OnMouseUp" Background="Aqua" Opacity="1">
+        <WrapPanel>
+            <TextBlock Foreground="Aqua">Multi</TextBlock>
+            <TextBlock Foreground="Red">Hola Multi</TextBlock>
+        </WrapPanel>
+        <Button Name="btnPlay" HorizontalAlignment="Left" Content="First Option" Height="25" FontWeight="Bold" ></Button>
+        <TextBox Text="hola" Width="30" Height="50"></TextBox>
     </Grid>
 </Window>

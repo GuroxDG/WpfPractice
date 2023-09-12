@@ -24,5 +24,21 @@ namespace Wpfpractice
         {
             InitializeComponent();
         }
+
+        private void PnlMainGrid_OnMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("you clicked"+e.GetPosition(this).ToString());
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
