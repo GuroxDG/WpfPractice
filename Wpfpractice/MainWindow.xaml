@@ -6,12 +6,15 @@
         xmlns:local="clr-namespace:Wpfpractice"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid Name="pnlMainGrid" MouseUp="PnlMainGrid_OnMouseUp" Background="Aqua" Opacity="1">
+    <Window.Resources>
+        <SolidColorBrush x:Key="brush" Color="Red" />
+    </Window.Resources>
+    <Grid Name="pnlMainGrid" MouseUp="PnlMainGrid_OnMouseUp" Background="LightBlue" Opacity="1">
         <WrapPanel>
-            <TextBlock Foreground="Aqua">Multi</TextBlock>
-            <TextBlock Foreground="Red">Hola Multi</TextBlock>
+            <TextBlock Foreground="Blue">Multi</TextBlock>
+            <TextBlock Foreground="{DynamicResource brush}">Hola Multi</TextBlock>
         </WrapPanel>
-        <Button Name="btnPlay" HorizontalAlignment="Left" Content="First Option" Height="25" FontWeight="Bold" ></Button>
+        <Button Name="btnPlay" HorizontalAlignment="Left" Content="First Option" Height="25" FontWeight="Bold" Click="BtnPlay_OnClick"></Button>
         <TextBox Text="hola" Width="30" Height="50"></TextBox>
     </Grid>
 </Window>

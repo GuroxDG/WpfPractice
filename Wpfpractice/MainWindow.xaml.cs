@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Resources;
 
 namespace Wpfpractice
 {
@@ -28,6 +29,12 @@ namespace Wpfpractice
         private void PnlMainGrid_OnMouseUp(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("you clicked"+e.GetPosition(this).ToString());
+        }
+
+        private void BtnPlay_OnClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("cambios");
+            this.btnPlay.SetResourceReference(BackgroundProperty, "brush"); 
         }
     }
 }
