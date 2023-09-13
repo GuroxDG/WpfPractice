@@ -34,10 +34,10 @@ namespace Wpfpractice
         private void BtnPlay_OnClick(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("cambios");
-            this.BtnPlay.SetResourceReference(BackgroundProperty, "brush"); 
+            this.BtnPlay.SetResourceReference(BackgroundProperty, "Brush"); 
         }
 
-        private void MainWindow_OnActivated(object? sender, EventArgs e)
+        private void MainWindow_OnActivated(object sender, EventArgs e)
         {
             Box.Items.Add("punto1");
             Box.Items.Add("punto2");
