@@ -25,16 +25,17 @@
         
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         
-        <Label>Names</Label>
-        <Canvas Background="Aquamarine"></Canvas>
-        <Button Name="BtnPlay" HorizontalAlignment="Left" Height="25" FontWeight="Bold" Click="BtnPlay_OnClick">
-            BtnPlay
-        </Button>
-        <ComboBox Grid.Row="0" Grid.Column="1" Name="Box" Width="60" Height="20" HorizontalAlignment="Center">
-        </ComboBox>
+        <Button Grid.Row="0" 
+            Name="btnOpenPdf"
+            Width="80"
+            Height="40"
+            Content="Abrir PDF" 
+            Click="BtnOpenPdf_OnClick"/>
+        
+        <Image Grid.Row="1" Name="pdfImage" Stretch="Uniform" />
+
         
     </Grid>
 </Window>

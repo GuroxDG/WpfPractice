@@ -13,6 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Resources;
+using Microsoft.Win32;
+using System.Drawing;
+using System.Windows;
+using System.Windows.Interop;
 
 namespace Wpfpractice
 {
@@ -33,16 +37,31 @@ namespace Wpfpractice
 
         private void BtnPlay_OnClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("cambios");
-            this.BtnPlay.SetResourceReference(BackgroundProperty, "Brush"); 
+            //MessageBox.Show("cambios");
+            //this.BtnPlay.SetResourceReference(BackgroundProperty, "Brush"); 
         }
 
         private void MainWindow_OnActivated(object sender, EventArgs e)
         {
-            Box.Items.Add("punto1");
-            Box.Items.Add("punto2");
-            Box.Items.Add("punto3");
+            //Box.Items.Add("punto1");
+            //Box.Items.Add("punto2");
+            //Box.Items.Add("punto3");
         }
+
+        private void BtnOpenPdf_OnClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos PDF (*.pdf)|*.pdf";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string pdfPath = openFileDialog.FileName;
+                
+                MessageBox.Show(pdfPath, "Informacion");
+            }
+        }
+            
+        
     }
 }
 
