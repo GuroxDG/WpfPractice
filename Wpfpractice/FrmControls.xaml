@@ -15,10 +15,7 @@
             VerticalAlignment="Top" Width="190"
             Text="Initial text content in Textbox">
             <TextBox.Background>
-                <LinearGradientBrush EndPoint="1.05" StartPoint="0.05">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="CadetBlue" Offset="1"/>
-                </LinearGradientBrush>
+                <SolidColorBrush Color="Aqua"></SolidColorBrush>
             </TextBox.Background>
         </TextBox>
         <Label Content="Passwordd" Margin="20,92,0,0"/>
