@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using System;
+using System.IO;
+using System.Windows;
+using System.Media;
 
 namespace Wpfpractice
 {
@@ -10,6 +13,10 @@ namespace Wpfpractice
         public MainWindow()
         {
             InitializeComponent();
+            
+            SplashScreen splashScreen = new SplashScreen("gurox.png");
+            splashScreen.Show(true,true);
+            splashScreen.Close(TimeSpan.FromSeconds(5));
         }
 
         private void Btn_OnClick(object sender, RoutedEventArgs e)

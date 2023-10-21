@@ -4,5 +4,6 @@
              xmlns:local="clr-namespace:Wpfpractice"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Image x:Key="logo" Source="C:\Users\gurox\Estudios\C#\Wpfpractice\Wpfpractice\Gurox.png"></Image>
     </Application.Resources>
 </Application>

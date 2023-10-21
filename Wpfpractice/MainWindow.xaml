@@ -6,7 +6,9 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"  
         xmlns:local="clr-namespace:Wpfpractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="CanResize" >
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanResize"
+        Icon="gurox.png">
+
     <Grid Name="PnlMainGrid"
           Background="LightBlue" Opacity="1" Margin="10">
         <Label x:Name="lbl" Content="Hello"
