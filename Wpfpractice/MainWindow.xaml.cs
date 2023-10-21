@@ -30,6 +30,12 @@ namespace Wpfpractice
             FrmSingIn window = new FrmSingIn();
             window.Show();
         }
+
+        private void BtnDinamic_OnClick(object sender, RoutedEventArgs e)
+        {
+            FrmDinamic window = new FrmDinamic();
+            window.Show();
+        }
     }
 }
 
