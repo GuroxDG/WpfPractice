@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="frmSingIn" Height="133" Width="340"
         WindowStartupLocation="CenterOwner"
+        Closed="FrmSingIn_OnClosed"
         >
     <Grid>
         <Label 
