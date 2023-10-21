@@ -5,11 +5,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:Wpfpractice"
         mc:Ignorable="d"
-        Title="AboutUS" Height="300" Width="300"
-        WindowStartupLocation="CenterScreen">
+        Title="AboutUS" Background="LightCyan"
+        Height="170" Width="324" ResizeMode="NoResize"
+        Topmost="True" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label x:Name="lbl" Content="Welcome to WPF App"
-               HorizontalAlignment="Center" Margin="80,64,0,0"
-               VerticalAlignment="Top"></Label>
+               HorizontalAlignment="Center" Margin="50,66,0,0"
+               VerticalAlignment="Top" Width="218"></Label>
     </Grid>
 </Window>

@@ -16,12 +16,18 @@ namespace Wpfpractice
             
             SplashScreen splashScreen = new SplashScreen("gurox.png");
             splashScreen.Show(true,true);
-            splashScreen.Close(TimeSpan.FromSeconds(5));
+            splashScreen.Close(TimeSpan.FromSeconds(2));
         }
 
         private void Btn_OnClick(object sender, RoutedEventArgs e)
         {
             AboutUs window = new AboutUs();
+            window.Show();
+        }
+
+        private void BtnSingIn_OnClick(object sender, RoutedEventArgs e)
+        {
+            frmSingIn window = new frmSingIn();
             window.Show();
         }
     }
