@@ -9,4 +9,9 @@
 
 
 
+    <ItemGroup>
+      <None Remove="gurox.png" />
+      <Resource Include="gurox.png" />
+    </ItemGroup>
+
 </Project>
