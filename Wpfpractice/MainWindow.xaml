@@ -10,14 +10,16 @@
 
     <Grid Name="PnlMainGrid"
           Background="LightBlue" Opacity="1" Margin="10">
-        <Label x:Name="lbl" Content="Hello"
-               HorizontalAlignment="Left" Margin="202,93,0,0"
-               VerticalAlignment="Top"></Label>
-        <Button x:Name="btn" Content="Call Window"
+        
+        <Label Content="Hello"
+               HorizontalAlignment="Center" Margin="0,0,0,0"
+               VerticalAlignment="Center"></Label>
+        
+        <Button x:Name="BtnCall" Content="Call Window"
                 HorizontalAlignment="Left" Margin="0,0,0,0"
                 Height="20" Width="80"
-                VerticalAlignment="Top" Click="Btn_OnClick"
-                ></Button>
+                VerticalAlignment="Top" Click="Btn_OnClick"></Button>
+        
         <Button x:Name="BtnSingIn" Content="SignIn"
                 Height="20" Width="80" 
                 HorizontalAlignment="Left"

@@ -27,7 +27,7 @@ namespace Wpfpractice
 
         private void BtnSingIn_OnClick(object sender, RoutedEventArgs e)
         {
-            frmSingIn window = new frmSingIn();
+            FrmSingIn window = new FrmSingIn();
             window.Show();
         }
     }
