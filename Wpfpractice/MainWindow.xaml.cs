@@ -30,38 +30,11 @@ namespace Wpfpractice
             InitializeComponent();
         }
 
-        private void PnlMainGrid_OnMouseUp(object sender, MouseButtonEventArgs e)
+        private void Btn_OnClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("you clicked"+e.GetPosition(this).ToString());
+            AboutUs window = new AboutUs();
+            window.Show();
         }
-
-        private void BtnPlay_OnClick(object sender, RoutedEventArgs e)
-        {
-            //MessageBox.Show("cambios");
-            //this.BtnPlay.SetResourceReference(BackgroundProperty, "Brush"); 
-        }
-
-        private void MainWindow_OnActivated(object sender, EventArgs e)
-        {
-            //Box.Items.Add("punto1");
-            //Box.Items.Add("punto2");
-            //Box.Items.Add("punto3");
-        }
-
-        private void BtnOpenPdf_OnClick(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Archivos PDF (*.pdf)|*.pdf";
-
-            if (openFileDialog.ShowDialog() == true)
-            {
-                string pdfPath = openFileDialog.FileName;
-                
-                MessageBox.Show(pdfPath, "Informacion");
-            }
-        }
-            
-        
     }
 }
 

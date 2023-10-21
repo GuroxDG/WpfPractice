@@ -7,35 +7,14 @@
         xmlns:local="clr-namespace:Wpfpractice"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="CanResize" >
-    <Window.Resources>
-        <SolidColorBrush x:Key="Brush" Color="Red" />
-        <sys:String x:Key="StrTitle" >Techniques</sys:String> 
-        <Style  TargetType="TextBlock">  
-            <Setter Property="Foreground" Value="DarkRed"/>  
-            <Setter Property="HorizontalAlignment" Value="Center"/>  
-        </Style>  
-    </Window.Resources>
-    <Grid Name="PnlMainGrid" MouseUp="PnlMainGrid_OnMouseUp" 
+    <Grid Name="PnlMainGrid"
           Background="LightBlue" Opacity="1" Margin="10">
-        
-        <Grid.RowDefinitions >
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        
-        <Button Grid.Row="0" 
-            Name="btnOpenPdf"
-            Width="80"
-            Height="40"
-            Content="Abrir PDF" 
-            Click="BtnOpenPdf_OnClick"/>
-        
-        <Image Grid.Row="1" Name="pdfImage" Stretch="Uniform" />
-
+        <Label x:Name="lbl" Content="Hello"
+               HorizontalAlignment="Left" Margin="202,93,0,0"
+               VerticalAlignment="Top"></Label>
+        <Button x:Name="btn" Content="Button"
+                HorizontalAlignment="Left" Margin="215,267,0,0"
+                VerticalAlignment="Top" Click="Btn_OnClick"></Button>
         
     </Grid>
 </Window>
