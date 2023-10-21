@@ -31,5 +31,12 @@
                 HorizontalAlignment="Left"
                 Margin="0,60,0,0"
                 VerticalAlignment="Top" Click="BtnDinamic_OnClick"></Button>
+            
+        <Button x:Name="BtnControls" Content="Controles"
+                    Height="20" Width="80" 
+                    HorizontalAlignment="Left"
+                    Margin="0,90,0,0"
+                    VerticalAlignment="Top" Click="BtnControls_OnClick"></Button>
+            
     </Grid>
 </Window>

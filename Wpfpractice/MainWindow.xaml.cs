@@ -36,6 +36,12 @@ namespace Wpfpractice
             FrmDinamic window = new FrmDinamic();
             window.Show();
         }
+
+        private void BtnControls_OnClick(object sender, RoutedEventArgs e)
+        {
+            FrmControls window = new FrmControls();
+            window.Show();
+        }
     }
 }
 
