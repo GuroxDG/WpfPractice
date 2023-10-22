@@ -82,6 +82,12 @@
             <ComboBoxItem Content="Accounting" IsSelected="False" />
             <ComboBoxItem Content="Computer Science" Background="Blue" Foreground="Red"/>
             <ComboBoxItem Content="Marketing" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="gurox.png" Width="20" Height="20"/>
+                    <TextBlock Text="Human Resource" />
+                </StackPanel>
+            </ComboBoxItem>
         </ComboBox>
 
 
