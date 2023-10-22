@@ -23,6 +23,17 @@
             x:Name="PasswordBox" HorizontalAlignment="Left"
             Margin="117,92,0,0" VerticalAlignment="Top"
             Width="187" Height="26" Password="s"/>
+        <Label Content="Descripción" Margin="20,122,0,0"/>
+        <RichTextBox
+            x:Name="RichText" HorizontalAlignment="Left"
+            Height="51" Margin="117,122,0,0"
+            VerticalAlignment="Top" Width="189">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Here a Richtext control"></Run>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
 
     </Grid>
