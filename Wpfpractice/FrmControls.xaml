@@ -34,6 +34,55 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
+        <Label Content="Certificate" Margin="20,182,0,0"/>
+        <CheckBox 
+            Content="M.B.A." Height="16"
+            HorizontalAlignment="Left" Margin="120,190,0,0"
+            Name="CheckBox1" VerticalAlignment="Top" Tag="0" IsChecked="True"/>
+        <CheckBox 
+            Content="B.A." Height="16"
+            HorizontalAlignment="Left" Margin="180,190,0,0"
+            Name="CheckBox2" VerticalAlignment="Top" Tag="1" IsChecked="True"/>
+        <CheckBox Height="16" HorizontalAlignment="Left" Name="CheckBox3"
+                  VerticalAlignment="Top" Margin="230,190,0,0">
+            <CheckBox.Content>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="gurox.png" />
+                    <TextBlock Text="M.B.S" />
+                </StackPanel>
+            </CheckBox.Content>
+        </CheckBox>
+        <Label 
+            Content="Gender" Height="28" HorizontalAlignment="Left"
+            Margin="22,210,0,0" Name="Label2" VerticalAlignment="Top"/>
+        <RadioButton 
+            Content="Female" Height="16" HorizontalAlignment="Left"
+            Margin="117,215,0,0" Name="RadioButton1" VerticalAlignment="Top"
+            GroupName="Gender" IsChecked="True"/>
+        <RadioButton 
+            Content="Male" Height="16" HorizontalAlignment="Left"
+            Margin="187,215,0,0" Name="RadioButton2" VerticalAlignment="Top"
+            GroupName="Gender" IsChecked="True"/>
+        <Label 
+            Content="Marital Status" Height="28" HorizontalAlignment="Left"
+            Margin="22,240,0,0" Name="Label3" VerticalAlignment="Top"/>
+        <RadioButton 
+            Content="Single" Height="16" HorizontalAlignment="Left"
+            Margin="117,245,0,0" Name="RadioButton3" VerticalAlignment="Top"
+            GroupName="MaritalStatus" IsChecked="True"/>
+        <RadioButton 
+            Content="Married" Height="16" HorizontalAlignment="Left"
+            Margin="187,245,0,0" Name="RadioButton4" VerticalAlignment="Top"
+            GroupName="MaritalStatus" IsChecked="True"/>
+        <Label Content="Deparment" Margin="20,270,0,0"/>
+        <ComboBox
+            Name="ComboBox1" Height="23" Width="120"
+            HorizontalAlignment="Left" Margin="117,270,0,0"
+            VerticalAlignment="Top">
+            <ComboBoxItem Content="Accounting" IsSelected="False" />
+            <ComboBoxItem Content="Computer Science" Background="Blue" Foreground="Red"/>
+            <ComboBoxItem Content="Marketing" IsSelected="True"></ComboBoxItem>
+        </ComboBox>
 
 
     </Grid>
