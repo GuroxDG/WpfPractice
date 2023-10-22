@@ -89,6 +89,17 @@
                 </StackPanel>
             </ComboBoxItem>
         </ComboBox>
+        <Image
+            Height="119" HorizontalAlignment="Left"
+            Margin="352,34,0,0" Name="Image1" Stretch="Fill"
+            VerticalAlignment="Top" Width="120" Source="gurox.png"
+            />
+        <Label Content="Join Date" Margin="20,310,0,0"/>
+        <DatePicker
+            Height="24" HorizontalAlignment="Left"
+            Margin="109,310,0,0" Name="DatePicker1"
+            VerticalAlignment="Top" Width="121" Text="Fecha a elegir"
+            />
 
 
     </Grid>
