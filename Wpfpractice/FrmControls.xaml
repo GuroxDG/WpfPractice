@@ -100,6 +100,15 @@
             Margin="109,310,0,0" Name="DatePicker1"
             VerticalAlignment="Top" Width="121" Text="Fecha a elegir"
             />
+        <Popup x:Name="MyPopup"
+               PlacementTarget="{Binding ElementName=Image1}">
+            <TextBlock x:Name="Mytext"
+                       Background="LightBlue"
+                       Foreground="Blue">
+                Popups can be of any shape but are always contained with a recatangular
+                bouding box
+            </TextBlock>
+        </Popup>
 
 
     </Grid>
