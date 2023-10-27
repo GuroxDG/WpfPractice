@@ -42,6 +42,12 @@ namespace Wpfpractice
             FrmControls window = new FrmControls();
             window.Show();
         }
+
+        private void BtnCalendar_OnClick(object sender, RoutedEventArgs e)
+        {
+            FrmCalendar window = new FrmCalendar();
+            window.Show();
+        }
     }
 }
 

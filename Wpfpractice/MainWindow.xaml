@@ -38,5 +38,11 @@
                     Margin="0,90,0,0"
                     VerticalAlignment="Top" Click="BtnControls_OnClick"></Button>
             
+        <Button x:Name="BtnCalendar" Content="Calendar"
+                    Height="20" Width="80" 
+                    HorizontalAlignment="Left"
+                    Margin="0,120,0,0"
+                    VerticalAlignment="Top" Click="BtnCalendar_OnClick"></Button>    
+            
     </Grid>
 </Window>
